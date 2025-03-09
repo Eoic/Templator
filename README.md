@@ -9,8 +9,11 @@ A very simple static site generator.
 `pip install .` (use `-e` flag to install for development)
 
 ## Usage
-* The program accepts only positional arguments like this: `task-cli <command> <arg1> <arg2> [argn]`
-* Use `task-cli -h` to show available commands.
+* Compile templates from `html/` directory into `dist/`:
+    ```
+    templator compile -i html/ -o dist/
+    ```
+* Use `tempaltor -h` to show all available commands.
 
 ### About
 1. Template files have `.html` extensions and use standard HTML syntax and a few template-specific expressions described below.
